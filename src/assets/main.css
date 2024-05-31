@@ -1,12 +1,25 @@
 @import './reset.css';
 
-.main-container {
+.content-wrapper {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.hive-list {
-  border: 2px solid red;
+.content-container {
+  border: 2px solid blue;
+  max-width: 600px;
+  width: 90%;
+  padding: 10px;
+}
+
+.main-title {
+  font-size: 2em;
+  text-align: center;
+  margin: 15px auto;
+}
+
+input, textarea {
+  border: 1px solid gray;
 }
