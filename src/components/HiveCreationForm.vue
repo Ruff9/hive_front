@@ -24,17 +24,19 @@
         },
         methods: {
             addItem() {
-                const path = import.meta.env.VITE_BACKEND_URL + '/hives/';
-                axios.post(path, {
+                const hive = {
                     name: this.name,
                     weight: this.weight,
                     description: this.description
-                }).then((res) => {
+                }
+                const path = import.meta.env.VITE_BACKEND_URL + '/hives/';
+
+                axios.post(path, hive)
+                .then((res) => {
                     this.name = null
                     this.weight = null
                     this.description = null
-                    console.log("Successfully Saved");
-                    this.$emit('add-hive')
+                    this.$emit('add-hive', hive)
                 }).catch(()=>{
                     console.log("Something Went Wrong");
                 })

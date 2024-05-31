@@ -8,28 +8,8 @@
 </template>
 
 <script>
-    import axios from 'axios'
-
     export default {
-        data() {
-            return {
-                hives: ['']
-            }
-        },
-        methods: {
-            async getData() {
-                try {
-                    const path = import.meta.env.VITE_BACKEND_URL + '/hives/';
-                    const response = await axios.get(path);
-                    this.hives = response.data;
-                } catch (error) {
-                    console.log(error);
-                }
-            },
-        },
-        created() {
-            this.getData();
-        }
+        props: ['hives']
     }
 </script>
 
