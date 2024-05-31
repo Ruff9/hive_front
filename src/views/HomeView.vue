@@ -1,9 +1,9 @@
 <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
+import HivesIndex from '../components/HivesIndex.vue'
 </script>
 
 <template>
-  <main>
-    <TheWelcome />
+  <main class="main-container">
+    <HivesIndex />
   </main>
 </template>
