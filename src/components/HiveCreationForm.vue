@@ -51,10 +51,7 @@
 
 <style>
     .hive-form {
-        border: 2px solid red;
-        width: 540px;
-        margin: 0 20px 20px;
-        padding: 5px 15px;
+        margin-bottom: 10px;
         display: flex;
         flex-direction: column;
     }
@@ -90,9 +87,11 @@
     }
 
     .hive-form-submit {
-        background-color: orange;
-        margin: 10px auto 5px;
-        padding: 5px 10px;
+        background-color: #FFC233;
+        color: #197278;
+        margin: 20px auto 10px;
+        padding: 10px 20px;
         cursor: pointer;
+        font-weight: bold;
     }
 </style>

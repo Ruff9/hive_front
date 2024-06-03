@@ -6,7 +6,7 @@
 
             <div class="hive-info">
                 <div class="hive-detail-name">{{ hive.name }}</div>
-                <div class="hive-detail-weight">{{ hive.weight }} kg</div>
+                <div class="hive-detail-weight">Poids : {{ hive.weight }} kg</div>
                 <div class="hive-detail-description">{{ hive.description }}</div>
             </div>
         </div>
@@ -45,14 +45,15 @@
     .back-to-home-link {
         display: block;
         text-decoration: underline;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
 
     .hive-detail-name {
         font-size: 1.5em;
+        margin-bottom: 5px;
     }
 
     .hive-detail-weight {
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
 </style>
