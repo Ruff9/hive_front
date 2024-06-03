@@ -1,7 +1,7 @@
 <template>
     <main class="content-wrapper">
         <div class="content-container">
-            <h1 class="main-title">Details</h1>
+            <h1 class="main-title">Détails</h1>
             <router-link to="/" class="back-to-home-link">Retour accueil</router-link>
 
             <div class="hive-info">

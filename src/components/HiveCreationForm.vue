@@ -2,11 +2,11 @@
     <form v-on:submit.prevent="addItem" class="hive-form">
         <div class="hive-form-fields">
             <div class="hive-form-section1">
-                <label class="hive-form-input-label">Nom *: <input v-model="name" required></label>
-                <label class="hive-form-input-label">Poids *: <input v-model="weight" required></label>
+                <label class="hive-form-input-label">Nom *: <input v-model="name" name="hive-name" required></label>
+                <label class="hive-form-input-label">Poids *: <input v-model="weight" name="hive-weight" required></label>
             </div>
             <div class="hive-form-section2">
-                <label class="hive-form-input-label hive-form-textarea-label">Description : <textarea v-model="description"></textarea></label>
+                <label class="hive-form-input-label hive-form-textarea-label">Description : <textarea v-model="description" name="hive-description"></textarea></label>
             </div>
         </div>
 
@@ -28,19 +28,19 @@
         },
         methods: {
             addItem() {
-                const hive = {
+                const params = {
                     name: this.name,
                     weight: this.weight,
                     description: this.description
                 }
                 const path = import.meta.env.VITE_BACKEND_URL + '/hives/';
 
-                axios.post(path, hive)
+                axios.post(path, params)
                 .then((res) => {
                     this.name = null
                     this.weight = null
                     this.description = null
-                    this.$emit('add-hive', hive)
+                    this.$emit('add-hive', res.data)
                 }).catch(()=>{
                     console.log("Something Went Wrong");
                 })
@@ -52,9 +52,9 @@
 <style>
     .hive-form {
         border: 2px solid red;
-        width: fit-content;
-        margin: 0 auto 20px;
-        padding: 5px;
+        width: 540px;
+        margin: 0 20px 20px;
+        padding: 5px 15px;
         display: flex;
         flex-direction: column;
     }
@@ -66,6 +66,11 @@
 
     .hive-form-section1 {
         margin-right: 10px;
+        width: 250px;
+    }
+
+    .hive-form-section2 {
+        width: 250px;
     }
 
     .hive-form-input-label {

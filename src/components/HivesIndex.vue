@@ -19,6 +19,12 @@
 </script>
 
 <style>
+    .hive-list {
+        max-height: 400px;
+        overflow: scroll;
+        padding: 0 20px;
+    }
+
     .hive-item {
         border: 2px solid blueviolet;
         margin-bottom: 10px;

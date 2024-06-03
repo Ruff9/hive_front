@@ -6,7 +6,7 @@ import HiveCreationForm from '../components/HiveCreationForm.vue'
 <template>
   <main class="content-wrapper">
     <div class="content-container">
-      <h1 class="main-title">RucheBook</h1>
+      <h1 class="main-title">Accueil</h1>
       <HiveCreationForm @add-hive="(h) => hives.push(h)"/>
       <HivesIndex :hives="hives"/>
     </div>

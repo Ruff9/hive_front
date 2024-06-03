@@ -1,0 +1,10 @@
+[{
+  "name": "First Hive",
+  "weight": 32,
+  "description": "Test data for Hive 1"
+},
+{
+  "name": "Second Hive",
+  "weight": 35,
+  "description": "Test data for Hive 2"
+}]

@@ -4,19 +4,20 @@
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .content-container {
   border: 2px solid blue;
   max-width: 600px;
   width: 90%;
+  height: fit-content;
   padding: 10px;
+  margin-top: 150px;
 }
 
 .main-title {
   font-size: 2em;
-  margin: 15px auto;
+  margin: 15px 20px;
 }
 
 input, textarea {
