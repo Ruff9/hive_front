@@ -23,12 +23,11 @@
         max-height: 400px;
         overflow: scroll;
         padding-top: 10px;
-        border-top: 2px solid #88e0e7;
+        border-top: 2px solid #FFDA85;
     }
 
     .hive-item {
-        border: 2px solid #b6e0f6;
-        background-color: #edf7fd;
+        background-color: #c9e8f8;
         border-radius: 2px;
         margin-bottom: 10px;
         display: flex;
