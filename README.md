@@ -1,41 +1,33 @@
-# hive_front
+# Hive Front
 
-This template should help get you started developing with Vue 3 in Vite.
+Front-end déployé sur Github pages : [https://ruff9.github.io/hive_front/](https://ruff9.github.io/hive_front/)
 
-## Recommended IDE Setup
+Le back-end est déployée sur Scalingo : [https://hive-api.osc-fr1.scalingo.io](https://hive-api.osc-fr1.scalingo.io)
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+et le code du back est disponible ici : [https://github.com/Ruff9/hive_api](https://github.com/Ruff9/hive_api)
 
-## Customize configuration
+## Setup
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
+```
+$ npm install
 ```
 
-### Compile and Hot-Reload for Development
+Pour lancer les tests end to end avec Cypress, il faut avoir lancé le serveur local pour le front :
 
-```sh
-npm run dev
+```
+$ npm run dev
 ```
 
-### Compile and Minify for Production
+mais aussi pour le back end,
 
-```sh
-npm run build
+```
+$ rails server
 ```
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+Depuis le dossier du back end, dans un autre onglet de console.
 
-```sh
-npm run test:unit
+On peut alors lancer Cypress, choisir "end to end" puis son navigateur.
+
 ```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
+$ npx cypress open
 ```
