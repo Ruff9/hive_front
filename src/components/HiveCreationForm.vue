@@ -2,7 +2,7 @@
     <form v-on:submit.prevent="addItem" class="hive-form">
         <div class="hive-form-fields">
             <div class="hive-form-section1">
-                <label class="hive-form-input-label">Nom *: <input v-model="name" name="hive-name" required></label>
+                <label class="hive-form-input-label">Nom *: <input v-model="name" name="hive-name" required :minlength="6"></label>
                 <label class="hive-form-input-label">Poids *: <input v-model="weight" name="hive-weight" required></label>
             </div>
             <div class="hive-form-section2">
